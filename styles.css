@@ -605,6 +605,10 @@ body{
   box-shadow:none;
 }
 
+.hero__mobilePhoto{
+  display:none;
+}
+
 .kicker,
 .eyebrow{
   border-color:rgba(114,255,0,.22);
@@ -814,9 +818,8 @@ body{
   #hero{
     min-height:auto;
     background:
-      linear-gradient(180deg, rgba(5,7,8,.78), rgba(5,7,8,.7)),
-      linear-gradient(90deg, rgba(5,7,8,.88), rgba(5,7,8,.42)),
-      url("images/hero.jpg") 56% top / cover no-repeat;
+      radial-gradient(520px 240px at 18% 0%, rgba(114,255,0,.08), transparent 70%),
+      linear-gradient(180deg, #0a0d0f, #080a0b);
   }
   #hero .hero__grid{
     grid-template-columns:1fr;
@@ -845,6 +848,17 @@ body{
   .services__cta .btn{
     width:100%;
   }
+  .hero__mobilePhoto{
+    display:block;
+    height:170px;
+    margin:6px 0 2px;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:8px;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.2)),
+      url("images/hero.jpg") center 42% / cover no-repeat;
+    box-shadow:0 18px 34px rgba(0,0,0,.3);
+  }
   .kicker{
     font-size:10px;
     line-height:1.35;
@@ -855,6 +869,10 @@ body{
   }
   .badge{
     padding:11px;
+  }
+  #hero .badge{
+    background:#111416;
+    border-color:rgba(255,255,255,.12);
   }
   .galleryGrid > *{
     flex-basis:85% !important;
@@ -871,6 +889,7 @@ body{
   .nav__actions .btn--primary{padding:10px 12px;font-size:12px}
   .hamburger{width:40px;height:40px}
   .hero h1{font-size:34px}
+  .hero__mobilePhoto{height:150px}
   .about-photo{height:250px}
   .about-badge{
     left:10px;
