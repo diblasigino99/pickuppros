@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pick Up Pros | Junk Removal Long Island | You Call, We Haul</title>
+  <meta name="description" content="Pick Up Pros provides junk removal, demolition, dump trailer rental, and shrink wrapping across Long Island with upfront pricing and fast turnaround." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css?v=20260813-mobile" as="style">
+  <link rel="stylesheet" href="styles.css?v=20260813-mobile" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero.jpg" />
+  <style>
+    /* hard lock gallery sizing in-page to bypass cache issues */
+    #gallery .galleryStrip {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
+      align-items: center;
+    }
+    #gallery .galleryGrid {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      gap: 10px !important;
+      overflow-x: auto !important;
+      scroll-snap-type: x proximity !important;
+    }
+    #gallery .galleryNav {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(17,20,22,.96);
+      color: #72ff00;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    #gallery .galleryNav:hover {
+      background: rgba(114,255,0,.12);
+    }
+    #gallery .galleryGrid > * {
+      flex: 0 0 calc((100% - 10px) / 2) !important;
+      max-width: calc((100% - 10px) / 2) !important;
+      min-width: 0 !important;
+      height: 340px !important;
+      margin: 0 !important;
+      overflow: hidden !important;
+      border-radius: 8px !important;
+    }
+    #gallery .galleryGrid > * img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
+    }
+    @media (max-width: 520px) {
+      #gallery .galleryStrip {
+        grid-template-columns: 1fr;
+      }
+      #gallery .galleryNav {
+        display: none;
+      }
+      #gallery .galleryGrid > * {
+        flex: 0 0 92% !important;
+        max-width: 92% !important;
+        height: 240px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navWrap">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img class="brand__logo" src="https://img1.wsimg.com/isteam/ip/e4c7fbd2-7ac2-41b0-918d-3ed016421b7b/PUP%20.png/:/rs=w:160,h:160,cg:true" alt="Pick Up Pros" width="52" height="52" decoding="async" />
+        <div class="brand__text">
+          <div class="brand__name">Pick Up Pros</div>
+          <div class="brand__tag">You Call, We Haul</div>
+        </div>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a class="pillLink" href="#quote" data-open-quote>Free Quote</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="tel:+15164260954">516-426-0954</a>
+        <a class="btn btn--primary" href="#quote" data-open-quote>Get a Quote</a>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" data-menu>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="drawer" data-drawer>
+      <div class="container drawer__inner">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#quote" data-open-quote>Free Quote</a>
+        <div class="drawer__cta">
+          <a class="btn btn--primary" href="#quote" data-open-quote>Get a Quote</a>
+          <a class="btn btn--ghost btn--full" href="tel:+15164260954">Call (516) 426-0954</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="kicker">JUNK REMOVAL • DEMOLITION • TRAILER RENTAL • SHRINK WRAPPING</div>
+          <h1>You <span class="heroAccent">Call</span> We <span class="heroAccent heroAccent--big">Haul</span> Fast, Clean, Stress-Free</h1>
+          <p class="sub">Pick Up Pros helps homeowners, businesses, and contractors across Long Island clear space fast with upfront pricing and reliable scheduling.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#quote" data-open-quote>Get a Quote</a>
+            <a class="btn btn--ghost" href="#services">View Services</a>
+          </div>
+          <div class="hero__badges">
+            <div class="badge"><span>⚡</span><div><b>Fast Turnaround</b><small>Same-day and next-day options</small></div></div>
+            <div class="badge"><span>💵</span><div><b>Upfront Pricing</b><small>Clear quote before work starts</small></div></div>
+            <div class="badge"><span>🛡️</span><div><b>Licensed &amp; Insured</b><small>Trusted local crew</small></div></div>
+          </div>
+          <p class="heroNote">Family-owned and locally operated.</p>
+        </div>
+      </div>
+      <div class="heroGlow" aria-hidden="true"></div>
+    </section>
+
+    <section id="quote" aria-hidden="true"></section>
+
+    <section id="about" class="about">
+      <div class="container about-wrap">
+        <div class="about-copy">
+          <p class="eyebrow">ABOUT PICK UP PROS</p>
+          <h2 class="about-title">Long Island's Trusted Junk Removal and Demolition Team</h2>
+          <p class="about-text">We handle junk removal, demolition, dump trailer rental, and shrink wrapping for residential and commercial clients. From one-item pickups to full cleanouts, we show up on time and leave your site clean.</p>
+          <ul class="about-bullets">
+            <li>Residential, commercial, and job-site service</li>
+            <li>Sweep-up included on every job</li>
+            <li>Nassau, Suffolk, NYC, and surrounding areas</li>
+          </ul>
+          <div class="about-cta">
+            <a class="btn btn--primary" href="#quote" data-open-quote>Get Free Estimate</a>
+            <a class="btn btn--ghost" href="./about.html">Meet the Team</a>
+          </div>
+        </div>
+        <div class="about-media" aria-label="About photo">
+          <div class="about-photo about-photo--logo">
+            <img src="images/Logopup.png" alt="Pick Up Pros logo" loading="lazy" decoding="async" width="900" height="600" />
+          </div>
+          <div class="about-badge">
+            <div class="badge-top">Service Area</div>
+            <div class="badge-bottom">Long Island • Nassau • Suffolk • NYC</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <p class="eyebrow">SERVICES</p>
+        <h2 class="section-title">Junk Removal and Demolition Services in Long Island</h2>
+        <p class="section-sub">Each core service has a dedicated page so you can quickly find what fits your job and request a quote with the right details.</p>
+
+        <div class="services__grid">
+          <article class="serviceCard" id="service-junk-removal">
+            <div class="serviceCard__icon" aria-hidden="true">🧹</div>
+            <h3 class="serviceCard__title">Junk Removal</h3>
+            <p class="serviceCard__text">Furniture, appliances, cleanouts, and single-item pickups with loading and haul-away included.</p>
+            <p class="serviceCard__fit">Best for: fast cleanouts and bulky item pickup.</p>
+            <a class="btn btn--ghost" href="./junk-removal-long-island.html">Learn More</a>
+          </article>
+          <article class="serviceCard" id="service-demolition">
+            <div class="serviceCard__icon" aria-hidden="true">🛠️</div>
+            <h3 class="serviceCard__title">Demolition and Haul Away</h3>
+            <p class="serviceCard__text">Sheds, decks, and interior tear-outs completed safely with full cleanup after demolition.</p>
+            <p class="serviceCard__fit">Best for: tear-outs where you also need debris removed.</p>
+            <a class="btn btn--ghost" href="./demolition-long-island.html">Learn More</a>
+          </article>
+          <article class="serviceCard" id="service-trailer">
+            <div class="serviceCard__icon" aria-hidden="true">🚛</div>
+            <h3 class="serviceCard__title">Dump Trailer Rental</h3>
+            <p class="serviceCard__text">Easy drop-off and pickup scheduling for remodels, cleanouts, and contractor projects.</p>
+            <p class="serviceCard__fit">Best for: loading at your own pace.</p>
+            <a class="btn btn--ghost" href="./dump-trailer-rental-long-island.html">Learn More</a>
+          </article>
+          <article class="serviceCard" id="service-shrinkwrap">
+            <div class="serviceCard__icon" aria-hidden="true">🧊</div>
+            <h3 class="serviceCard__title">Shrink Wrapping</h3>
+            <p class="serviceCard__text">Weather protection for boats, materials, and equipment with secure professional wrapping.</p>
+            <p class="serviceCard__fit">Best for: seasonal protection and storage prep.</p>
+            <a class="btn btn--ghost" href="./shrink-wrapping-long-island.html">Learn More</a>
+          </article>
+          <article class="serviceCard" id="service-debris">
+            <div class="serviceCard__icon" aria-hidden="true">🧱</div>
+            <h3 class="serviceCard__title">Construction Debris Removal</h3>
+            <p class="serviceCard__text">Drywall, lumber, flooring, and renovation waste pickup to keep active jobs on schedule.</p>
+            <p class="serviceCard__fit">Best for: active remodel and contractor job sites.</p>
+            <a class="btn btn--ghost" href="./construction-debris-removal-long-island.html">Learn More</a>
+          </article>
+          <article class="serviceCard" id="service-commercial">
+            <div class="serviceCard__icon" aria-hidden="true">🏢</div>
+            <h3 class="serviceCard__title">Commercial Cleanouts</h3>
+            <p class="serviceCard__text">Retail, office, and storage-unit cleanouts with flexible timing to minimize downtime.</p>
+            <p class="serviceCard__fit">Best for: businesses needing off-hour turnaround.</p>
+            <a class="btn btn--ghost" href="./junk-removal-long-island.html">Learn More</a>
+          </article>
+          <article class="serviceCard" id="service-cleanouts">
+            <div class="serviceCard__icon" aria-hidden="true">🏠</div>
+            <h3 class="serviceCard__title">Property and Estate Cleanouts</h3>
+            <p class="serviceCard__text">Complete cleanouts handled with speed and care for moves, sales, and property turnover.</p>
+            <p class="serviceCard__fit">Best for: full-property clear-outs on a deadline.</p>
+            <a class="btn btn--ghost" href="./junk-removal-long-island.html">Learn More</a>
+          </article>
+          <article class="serviceCard" id="service-holiday">
+            <div class="serviceCard__icon" aria-hidden="true">💡</div>
+            <h3 class="serviceCard__title">Seasonal and Holiday Lights</h3>
+            <p class="serviceCard__text">Install, removal, and storage options for a clean, professional holiday setup.</p>
+            <p class="serviceCard__fit">Best for: one-season setup without the ladder risk.</p>
+            <a class="btn btn--ghost" href="#quote" data-open-quote>Ask About This</a>
+          </article>
+        </div>
+
+        <div class="services__cta">
+          <a class="btn btn--primary" href="#quote" data-open-quote>Get a Free Quote</a>
+          <a class="btn btn--ghost" href="tel:+15164260954">Call (516) 426-0954</a>
+        </div>
+        <p class="services__note">Not sure which service fits your project? Send details and photos and we will point you to the right option.</p>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <div class="container">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2 class="section-title">Simple Process, Fast Turnaround</h2>
+        <p class="section-sub">You send details, we confirm scope and timing, then we handle the heavy lifting and cleanup.</p>
+        <div class="processGrid">
+          <article class="processStep"><span class="stepNum">1</span><h3>Send Job Details</h3><p>Tell us what needs removal or demolition and share photos if available.</p></article>
+          <article class="processStep"><span class="stepNum">2</span><h3>Get Clear Pricing</h3><p>We provide an upfront quote and recommended schedule window.</p></article>
+          <article class="processStep"><span class="stepNum">3</span><h3>On-Site Service</h3><p>Our crew arrives on time, completes the work safely, and keeps disruption low.</p></article>
+          <article class="processStep"><span class="stepNum">4</span><h3>Final Sweep-Up</h3><p>We finish with cleanup so your property is left ready to use.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <p class="eyebrow">WORK EXAMPLES</p>
+        <h2 class="section-title">Before and After Results</h2>
+        <p class="section-sub">Take a look at some of our work over the years.</p>
+
+        <div class="galleryStrip">
+          <button class="galleryNav" type="button" aria-label="Scroll gallery left" data-gallery-prev>‹</button>
+        <div class="galleryGrid" id="mainGallery">
+          <figure class="galleryPhoto"><img src="images/photo2.jpg" alt="Garage cleanout photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo1.jpg" alt="Shed demolition photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo3.jpg" alt="Estate cleanout photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo4.jpg" alt="Contractor debris pickup photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo5.jpg" alt="Retail cleanout photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo6.jpg" alt="Backyard debris removal photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo7.jpg" alt="Heavy item haul photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo8.jpg" alt="Full property clearout photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo9.jpg" alt="Office cleanup photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo10.jpg" alt="Debris haul away photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo11.jpg" alt="Before and after transformation photo" loading="lazy" decoding="async" /></figure>
+          <figure class="galleryPhoto"><img src="images/photo12.jpg" alt="Final sweep up photo" loading="lazy" decoding="async" /></figure>
+        </div>
+          <button class="galleryNav" type="button" aria-label="Scroll gallery right" data-gallery-next>›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <p class="eyebrow">REVIEWS</p>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-sub">A few words from customers across Long Island.</p>
+        <div class="reviewGrid">
+          <article class="reviewCard"><div class="rating">★★★★★</div><p>They were fast, reliable and very professional.  They cleaned their workspace, showed up on time and finished within their budgeted  timeframe.  Will definitely call them in the future.  Great guys!!  Wouldn't go anywhere else.</p><cite>Monica, Nassau County</cite></article>
+          <article class="reviewCard"><div class="rating">★★★★★</div><p>Pick Up Pros provided excellent service for my mom, and they will be our go-to for any future needs!</p><cite>Nick, Suffolk County</cite></article>
+          <article class="reviewCard"><div class="rating">★★★★★</div><p>I called Pick Up Pros in the midst of a move. Brendan and John got rid of unwanted furniture, plants, scrap, and more, and made the experience easy. If you need anything removed, big or small, these are your guys.</p><cite>Nicholas, Homeowner Long Island</cite></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <div class="quoteDrawer" data-quote-drawer hidden>
+    <div class="quoteDrawer__backdrop" data-quote-close></div>
+    <aside class="quoteDrawer__panel" role="dialog" aria-modal="true" aria-label="Get a Free Quote">
+      <div class="quoteDrawer__top">
+        <div>
+          <div class="quoteDrawer__badge">Free Quote</div>
+          <h2 class="quoteDrawer__title">Get a Quote</h2>
+          <p class="quoteDrawer__sub">Send details plus photos for faster pricing.</p>
+        </div>
+        <button class="quoteDrawer__close" type="button" data-quote-close aria-label="Close quote form">✕</button>
+      </div>
+      <form class="form form--drawer" id="quoteDrawerForm" name="quote-request" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="company">
+        <input type="hidden" name="form-name" value="quote-request" />
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" />
+        <div class="grid2">
+          <label>Name<input name="name" type="text" autocomplete="name" placeholder="Your name" required /></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" placeholder="(516) 555-1234" required /></label>
+        </div>
+        <label>Email<input name="email" type="email" autocomplete="email" placeholder="PickUpProsLI@gmail.com" required /></label>
+        <label>Service
+          <select name="service" required>
+            <option value="" selected disabled>Select a service</option>
+            <option>Residential Junk Removal</option>
+            <option>Commercial Junk Removal</option>
+            <option>Demolition</option>
+            <option>Dump Trailer Rental</option>
+            <option>Shrink Wrapping</option>
+            <option>Construction Debris Removal</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Job details<textarea name="details" rows="4" placeholder="What items? Approx amount? Access notes? Timing?"></textarea></label>
+        <label class="file">Attach photos (optional)<input name="photos" type="file" accept="image/*" multiple /><span class="file__hint" data-filehint>No files selected</span></label>
+        <button class="btn btn--primary btn--full" type="submit">Request Quote</button>
+        <p class="fineprint">Prefer a call? <a href="tel:+15164260954">Tap to call (516) 426-0954</a>.</p>
+        <p class="form__status" role="status" aria-live="polite" data-status></p>
+      </form>
+    </aside>
+  </div>
+
+  <script src="script.js?v=20260813-mobile" defer></script>
+</body>
+</html>
