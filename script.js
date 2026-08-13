@@ -138,3 +138,51 @@
   });
 
 })();
+
+(() => {
+  document.querySelectorAll(".form--drawer").forEach((form) => {
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const status = form.querySelector("[data-status]");
+      const submit = form.querySelector('button[type="submit"]');
+      const files = form.querySelector('input[type="file"]')?.files;
+      const formData = new FormData(form);
+
+      const payload = Object.fromEntries(formData.entries());
+      payload.pageUrl = window.location.href;
+      payload.photoNames = files ? Array.from(files).map((file) => file.name) : [];
+
+      if (status) {
+        status.textContent = "Sending your request...";
+        status.classList.remove("form__status--error", "form__status--success");
+      }
+      if (submit) submit.disabled = true;
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || !result.ok) {
+          throw new Error(result.message || "Could not send the quote request.");
+        }
+
+        if (status) {
+          status.textContent = "Thanks. Your request was sent.";
+          status.classList.add("form__status--success");
+        }
+        window.location.href = "/thank-you.html";
+      } catch (error) {
+        if (status) {
+          status.textContent = error.message || "Something went wrong. Please call us.";
+          status.classList.add("form__status--error");
+        }
+        if (submit) submit.disabled = false;
+      }
+    });
+  });
+})();

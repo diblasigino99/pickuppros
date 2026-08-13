@@ -7,8 +7,8 @@
   <meta name="description" content="Dump trailer rental in Long Island with flexible drop-off and pickup scheduling for cleanouts, remodels, and contractor jobs." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" href="./styles.css?v=20260813-mobile" as="style" />
-  <link rel="stylesheet" href="./styles.css?v=20260813-mobile" />
+  <link rel="preload" href="./styles.css?v=20260813-form" as="style" />
+  <link rel="stylesheet" href="./styles.css?v=20260813-form" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -116,7 +116,7 @@
         </div>
         <button class="quoteDrawer__close" type="button" data-quote-close aria-label="Close quote form">✕</button>
       </div>
-      <form class="form form--drawer" id="quoteDrawerForm" name="quote-request" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="company">
+      <form class="form form--drawer" id="quoteDrawerForm" name="quote-request" method="POST" action="/api/quote">
         <input type="hidden" name="form-name" value="quote-request" />
         <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" />
         <div class="grid2">
@@ -140,6 +140,6 @@
     </aside>
   </div>
 
-  <script src="./script.js?v=20260813-mobile" defer></script>
+  <script src="./script.js?v=20260813-form" defer></script>
 </body>
 </html>
